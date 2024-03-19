@@ -1,0 +1,21 @@
+/*TERMINAL 150×39 rows×cols*/
+/*row: default x=0, default w=100%*/
+row{
+    y:0;
+    h:13;
+    border-style:classic;
+}
+#speChar{ border-fg-color:yellow; }
+#speCharTitle_bold, #speCharTitle_bold_red
+{
+    text-bold:bold;
+}
+/*bold not exists in the terminal: convert text color
+in light-color so has no effect on text in light-color*/
+#speCharTitle_bold_red
+{
+    text-color:red;
+}
+.input{
+    text-bg:blue;
+}

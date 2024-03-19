@@ -1,0 +1,20 @@
+<pyml>
+   <!--ROW1-->
+   <row:speChar>
+      <rect:speCharTitle>
+         <txt:speCharTitle_bold txt="Question nº">
+         <txt:speCharTitle_bold_red txt="$variable">
+      <rect:speCharCont>
+         <txt:speCharCont>
+    <!--ROW2-->
+   <row:question>
+      <back:qtitle>
+         <txt:qtitle txt="$variable">
+      <rect:qcont>
+         <txt:qcont txt="$variable">
+   <!--ROW3-->
+   <row:answer>
+      <wave:atitle>
+         <txt:atitle txt="$input_instruct">
+      <rect:acont class="input">
+         <txt:acont txt="$input_var" class="input">
