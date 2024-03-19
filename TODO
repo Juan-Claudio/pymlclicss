@@ -1,0 +1,18 @@
+## Medium Priority
+
+### Split multi-classes file to different files
+- [ ] Apply it to Pyml_interpreter
+- [ ] Apply it to Pycli like this:
+``` python
+class Draw:
+    def rect(): return 'I draw.'
+
+class Write:
+    def piece(): return 'I write.'
+    
+class Cli:
+    Draw = Draw
+    Write = Write
+    
+print(Cli.Draw.rect(), Cli.Write.piece())
+```
