@@ -40,7 +40,7 @@ class Style:
     def ansi_m(clr_num) -> str: return f"\033[{clr_num}m"
 
     @staticmethod
-    def clearf(): return "\033[0m"
+    def clear(): return "\033[0m"
 
     @staticmethod
     def name_to_ansi_color(clr_name:str, fg:bool=True) -> str:
@@ -63,20 +63,20 @@ class Style:
         
     @staticmethod
     def fg(clr_name):
-        return Style.clr(clr_name)
+        return Style.name_to_ansi_color(clr_name)
     
     @staticmethod
     def bg(clr_name):
-        return Style.clr(clr_name,False)
+        return Style.name_to_ansi_color(clr_name,False)
     
     @staticmethod
     def fbg(clr_name):
-        color = Style.clr(clr_name,False)
-        color += Style.clr(clr_name)
+        color = Style.name_to_ansi_color(clr_name,False)
+        color += Style.name_to_ansi_color(clr_name)
         return color
     
     @staticmethod
     def fgbg(fgclr_name, bgclr_name):
-        color = Style.clr(fgclr_name)
-        color += Style.clr(bgclr_name,False)
+        color = Style.name_to_ansi_color(fgclr_name)
+        color += Style.name_to_ansi_color(bgclr_name,False)
         return color

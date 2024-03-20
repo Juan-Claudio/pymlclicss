@@ -79,7 +79,6 @@ class Draw:
     # list(topleft,topright,bottomleft,bottomright,horizontal,vertical)
     @staticmethod
     def rectangle(x, y, w, h, char:list=['┌','┐','└','┘','─','│'],style=''):
-        #TODO change fg and bg type to list, to color each line individually
         rect = ''
         if len(char)>=0 and len(char)<6:
             pattern = " " if len(char)==0 else char[0]

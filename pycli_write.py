@@ -3,10 +3,10 @@ from pycli_style import Style
 class Write:
     @staticmethod
     def piece(string, style=''):
-        return style+string+Style.clearf()
+        return style+string+Style.clear()
     
     def leftAt(x,y, string, style=''):
-        return Style.position(x,y)+style+string+Syle.clearf()
+        return Style.position(x,y)+style+string+Syle.clear()
 
     def rightAt(x,y,w, string, style=''):
         x = x+(w-len(string))
