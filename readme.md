@@ -72,6 +72,13 @@ zone with default x=0 and default w=100%
         <rect:acont>
             <txt:acont>
 
+## pycss operation
+- margin change x, y of element itself
+- margin include in width (margin left and right removed from width pycss property)
+- margin include in height (margin top and bottom removed from height pycss property)
+- padding change x,y of children elements
+- padding change width, height of children elements (like margin change w,h of element itself)
+
 ## Last version
     pyml_interpreter.py
         contains

@@ -1,6 +1,6 @@
 <pyml>
    <!--ROW1-->
-   <row:speChar>
+   <row:row_one>
       <rect:speCharTitle>
          <txt:speCharTitle_bold txt="Question nº">
          <txt:speCharTitle_bold_red txt="$variable">
@@ -8,13 +8,13 @@
          <txt:speCharCont>
     <!--ROW2-->
    <row:question>
-      <back:qtitle>
+      <rect:qtitle>
          <txt:qtitle txt="$variable">
       <rect:qcont>
          <txt:qcont txt="$variable">
    <!--ROW3-->
    <row:answer>
-      <wave:atitle>
+      <rect:atitle>
          <txt:atitle txt="$input_instruct">
       <rect:acont class="input">
          <txt:acont txt="$input_var" class="input">

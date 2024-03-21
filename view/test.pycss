@@ -1,21 +1,41 @@
 /*TERMINAL 150×39 rows×cols*/
 /*row: default x=0, default w=100%*/
-row{
-    y:0;
-    h:13;
-    border-style:classic;
+pyml
+{
+    width:100%;height:40;
 }
-#speChar{ border-fg-color:yellow; }
+row
+{
+    y: 0;
+    height: 17;
+    border-style: classic;
+}
+txt
+{
+    width:100%;
+}
+rect
+{
+    x:2;y:1;
+    /*margin-top:1; margin-left:1;*/
+    width:150;height:40%;
+    margin-top: 0;
+}
+
+#row_one{ border-color:yellow; }
+#question{ border-color:green; }
+#answer{ border-color:cyan; }
+
 #speCharTitle_bold, #speCharTitle_bold_red
 {
-    text-bold:bold;
+    text-background: yellow;
 }
-/*bold not exists in the terminal: convert text color
-in light-color so has no effect on text in light-color*/
+
 #speCharTitle_bold_red
 {
-    text-color:red;
+    text-color: red;
 }
+
 .input{
-    text-bg:blue;
+    text-background: blue;
 }

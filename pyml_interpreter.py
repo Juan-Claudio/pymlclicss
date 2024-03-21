@@ -1,7 +1,7 @@
 #convert pyml to pyDom
 import re
-from pyelement import Pyml_element
-from pydom import Pyml_tree
+from pyml_element import Pyml_element
+from pyml_dom import Pyml_tree
 
 #PYML INTERPRETER => From pyml code to dom object
 class Pyml_to_dom:

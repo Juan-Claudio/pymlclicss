@@ -9,12 +9,12 @@ class Pyml_css_to_dom:
    def tokener(pycss_code):
       #remove all spaces
       tokens = re.sub(r'\s*','',pycss_code)
-
+      
       #remove comments
       tokens = re.sub(r'\/\*[^(\*\/)]+\*\/', '', tokens)
 
-      #find all blocks
-      tokens = re.findall(r'[#.,\-\w]+\{[;:\-\w]+\}', tokens, re.M)
+      #find all blocks /!\ if add new units must add them in the regexp below
+      tokens = re.findall(r'[#.,\-\w]+\{[;:\-\w%]+\}', tokens, re.M)
 
       return tokens
    

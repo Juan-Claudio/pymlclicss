@@ -1,5 +1,6 @@
 from pycli_write import Write
 from pycli_style import Style
+from pycli_convert import Convert
 
 import math
 
@@ -133,5 +134,23 @@ class Draw:
         #draw border if exists
         if border_style is not None:
             style = '' if border_fg is None else Style.fg(border_fg)
-            style = style if border_bg is None else style + Style.fg(border_bg)
+            style = style if border_bg is None else style + Style.bg(border_bg)
             box += Draw.rectangle(x, y, w, h, border_style, style)
+        
+        return box
+    
+    def props(props, txt):
+        screen = Draw.rect(
+            props['x'], props['y'],
+            props['width'], props['height'],
+            Convert.border_style(props['border-style']),
+            props['border-color'],
+            props['border-background'],
+            props['background-color'],
+        ) or ''
+
+        if txt != '':
+            screen += Style.position( props['x'], props['y'] )
+            screen += txt
+        
+        return screen
